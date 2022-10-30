@@ -90,15 +90,15 @@ function Post({post}: Props) {
 
                 <label className="block mb-5">
                     <span className="text-gray-700">Name</span>
-                    <input {...register("name", { required: true})} className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-green-600 outline-none ring-0 focus:ring-1" placeholder="Fake Name" type="text"></input>
+                    <input {...register("name", { required: true})} className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-green-600 outline-none ring-0 focus:ring-1" placeholder="Johnny Bravo" type="text"></input>
                 </label>
                 <label className="block mb-5">
                     <span className="text-gray-700">Email</span>
-                    <input {...register("email", { required: true})} className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-green-600 outline-none ring-0 focus:ring-1" placeholder="Fake Name" type="text"></input>
+                    <input {...register("email", { required: true})} className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-green-600 outline-none ring-0 focus:ring-1" placeholder="johnny@bravo.com" type="text"></input>
                 </label>
                 <label className="block mb-5">
                     <span className="text-gray-700">Comment</span>
-                    <textarea {...register("comment", { required: true})} className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-green-600 outline-none ring-0 focus:ring-1 " placeholder="Fake Name" rows={8}></textarea>
+                    <textarea {...register("comment", { required: true})} className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-green-600 outline-none ring-0 focus:ring-1 " placeholder="This was really insightful, thanks!" rows={8}></textarea>
                 </label>
 
                 <div className="flex flex-col p-5">
