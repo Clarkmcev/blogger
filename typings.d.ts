@@ -7,7 +7,7 @@ export interface Post {
         image: string;
     };
     description: string;
-    comment: Comment[];
+    comments: Comment[];
     mainImage: {
         asset: {
             url: string;
@@ -19,7 +19,7 @@ export interface Post {
     body: [object]
 }
 
-export interface Post {
+export interface Comment {
     approved: boolean;
     comment: string;
     email: string;

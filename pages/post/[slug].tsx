@@ -6,7 +6,6 @@ import { sanityClient, urlFor } from '../../sanity'
 import { Post } from '../../typings';
 import PortableText, {blockContentToPlainText}  from "react-portable-text"
 import { useForm, SubmitHandler  } from "react-hook-form";
-// import {PortableText} from '@portabletext/react'
 
 interface IFormInput {
     _id: string;
@@ -35,14 +34,6 @@ function Post({post}: Props) {
             setSubmitted(false)
         })
     }
-
-    const components = {
-        types: {
-          h1: (props:any) => (
-            <h1 className="text-2xl font-bold my-5" {...props}></h1>
-          )
-        }
-      }
 
   return (
     <div>
